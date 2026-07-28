@@ -1,11 +1,13 @@
+package com.example;
+
 public class App {
+
     public static void main(String[] args) {
-        String message = "Hello! Your Java app is running through GitHub Actions.";
-        System.out.println(message);
+        System.out.println("Hello from Maven!");
+        System.out.println("2 + 3 = " + add(2, 3));
+    }
 
-        int firstNumber = 10;
-        int secondNumber = 20;
-
-        System.out.println("Sum: " + (firstNumber + secondNumber));
+    public static int add(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
     }
 }
